@@ -1,0 +1,40 @@
+classDiagram
+
+    IphoneMultiApps --|> Internet
+    IphoneMultiApps --|> Musica
+    IphoneMultiApps --|> Telefone
+
+    NavegadorInternet --|> Internet
+    ReprodutorMusical --|> Musica
+    AparelhoTelefonico --|> Telefone
+
+    class ReprodutorMusical{
+      
+    }
+    class AparelhoTelefonico{
+     
+    }
+    class NavegadorInternet{
+      
+    }
+    class Internet{
+      +exibirPagina(String url) void
+      +adicionarNovaAba() void
+      +atualizarPagina() void
+    }
+    class Musica{
+      +tocar() void
+      +pausar() void
+      +selecionarMusica(String musica) void
+    }
+    class Telefone{
+       +ligar(String numero) void
+      +atender() void
+      +iniciarCorreioVoz() void
+    }
+
+
+
+ 
+
+    
